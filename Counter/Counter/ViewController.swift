@@ -21,9 +21,12 @@ class ViewController: UIViewController
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var stepper: UIStepper!
     
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        slider.maximumValue = 100
+        updateViewsWithCurrentCount()
         
         //
         // 1. Once the currentCount variable is set, each of the UI elements on the screen need to be updated to match the currentCount.
