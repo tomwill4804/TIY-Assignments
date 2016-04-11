@@ -95,9 +95,9 @@
         //    Once you have the color object, you should be able to set the view's background color to this object.
         //
         
-        UIColor *authenticatedBackgroundColor = nil;
+        UIColor *authenticatedBackgroundColor = [UIColor colorWithRed:0.585 green:0.78 blue:0.188 alpha:1];
         // Additional step to set the above color object to self.view's background color
-        self.view.backgroundColor = [UIColor colorWithRed:0.585 green:0.78 blue:0.188 alpha:1];
+        self.view.backgroundColor = authenticatedBackgroundColor;
     }
     else
     {
@@ -110,9 +110,9 @@
         //
         //    Once you have the color object, you should be able to set the view's background color to this object.
         //
-        UIColor *accessDeniedBackgroundColor = nil;
+        UIColor *accessDeniedBackgroundColor = [UIColor colorWithRed:0.78 green:0.188 blue:0.188 alpha:1];
         // Additional step to set the above color object to self.view's background color
-        self.view.backgroundColor = [UIColor colorWithRed:0.78 green:0.188 blue:0.188 alpha:1];
+        self.view.backgroundColor = accessDeniedBackgroundColor;
     }
 }
 
