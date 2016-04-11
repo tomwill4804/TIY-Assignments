@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Mission Briefing/ViewController.m"
-            timestampString = "482095448.809079"
+            timestampString = "482100472.647423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "-authenticateAgent:"
             landmarkType = "5">
          </BreakpointContent>

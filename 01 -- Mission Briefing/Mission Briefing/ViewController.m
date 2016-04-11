@@ -63,11 +63,8 @@
         //    the delimiter would be a space character.
         //
         NSArray *agentNames = [self.agentNameTextField.text componentsSeparatedByString:@" "];
-        NSString *agentLastName = agentNames[0];
-        if ([agentNames count] > 1 ) {
-            agentLastName = agentNames[1];
-        }
-  
+        NSString *agentLastName = agentNames[[agentNames count]-1];
+        
         // Additional step(s) to remove only the last name
         self.greetingLabel.text = [NSString stringWithFormat:@"Good evening, Agent %@", agentLastName];
         
