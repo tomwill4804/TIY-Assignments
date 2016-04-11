@@ -63,9 +63,9 @@
         //    the delimiter would be a space character.
         //
         NSArray *agentNames = [self.agentNameTextField.text componentsSeparatedByString:@" "];
-        NSString *agentLastName = [agentNames objectAtIndex:0];
+        NSString *agentLastName = agentNames[0];
         if ([agentNames count] > 1 ) {
-            agentLastName = [agentNames objectAtIndex:1];
+            agentLastName = agentNames[1];
         }
   
         // Additional step(s) to remove only the last name
