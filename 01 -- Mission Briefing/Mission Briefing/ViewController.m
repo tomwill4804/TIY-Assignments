@@ -69,7 +69,7 @@
         }
   
         // Additional step(s) to remove only the last name
-        self.greetingLabel.text = [NSString stringWithFormat:@"%@ %@", @"Good evening, Agent", agentLastName];
+        self.greetingLabel.text = [NSString stringWithFormat:@"Good evening, Agent %@", agentLastName];
         
         //
         // 4. The mission briefing textview needs to be populated with the briefing from HQ, but it must also include the last
