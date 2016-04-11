@@ -52,6 +52,7 @@
     //
     // 2. Check whether there is text in BOTH the name and password textfields
     //
+    [self.agentNameTextField setText: [self.agentNameTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]];
     if (self.agentNameTextField.text.length > 0 && self.agentPasswordTextField.text.length > 0)
     {
         //
