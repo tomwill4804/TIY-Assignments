@@ -30,20 +30,25 @@ int main(int argc, const char * argv[]) {
         //  find largest palindrome
         //
         
+        int large=0;
         int m1=0;
         int m2=0;
         const int max=999;
         
         for (int i=1; i <= max; i++) {
             for (int j = i; j <= max; j++) {
-                if (pal([NSString stringWithFormat:@"%d", i*j])) {
-                    m1 = i;
-                    m2 = j;
+                int product = i*j;
+                if (pal([NSString stringWithFormat:@"%d", product])) {
+                    if (product > large) {
+                        large = product;
+                        m1 = i;
+                        m2 = j;
+                    }
                 }
             }
         }
                     
-        NSLog(@"Palindrome : %d * %d = %d", m1, m2, m1*m2);
+        NSLog(@"Palindrome : %d * %d = %d", m1, m2, large);
         
     }
     
