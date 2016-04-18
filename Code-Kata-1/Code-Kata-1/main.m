@@ -38,12 +38,10 @@ int main(int argc, const char * argv[]) {
         for (int i=1; i <= max; i++) {
             for (int j = i; j <= max; j++) {
                 int product = i*j;
-                if (pal([NSString stringWithFormat:@"%d", product])) {
-                    if (product > large) {
+                if (pal([NSString stringWithFormat:@"%d", product]) && (product > large)) {
                         large = product;
                         m1 = i;
                         m2 = j;
-                    }
                 }
             }
         }
